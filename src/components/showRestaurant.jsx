@@ -15,7 +15,7 @@ class Showrestaurant extends Component {
                 <div className="card" style={{width: "18rem" ,"margin":"auto"}}>
                     <img src={this.state.img} style={{"width":285, "height":250}} className="card-img-top" alt="..."/>
                     <div className="card-body">
-                        <h5 className="card-title" style={{"textAlign":"center"}}> <b>RestaurantName:</b> {this.props.restaurantName}</h5>
+                        <h5 className="card-title" style={{"textAlign":"center"}}> <b>RestaurantName:</b>The Gallery Café {this.props.restaurantName}</h5>
                         <div className="card-text">
                             <ul>
                                 <div className="detail">
@@ -25,7 +25,7 @@ class Showrestaurant extends Component {
                                     <b>Floor:</b> 6th Floor
                                 </div>
                                 <div className="detail">
-                                    <b>OwnerName: </b> Lankey Bandaranaike
+                                    <b>OwnerName: </b> Lankey Bandaranyake
                                 </div>
                                 <div className="detail">
                                     <b>BusinessType: </b> Seascape Resort
