@@ -59,7 +59,7 @@ const App = () => {
                     </div>
                     <div className="col-md-6">
                     <div className="form-group">
-                        <input type="number" className= "form-control" value={restaurantAddress} placeholder="Restaurant Address" onChange={(e) => {
+                        <input type="text" className= "form-control" value={restaurantAddress} placeholder="Restaurant Address" onChange={(e) => {
                                 setRestaurantAddress(e.target.value);
                             }} required/>
                         </div>

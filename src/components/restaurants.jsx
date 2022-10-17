@@ -25,7 +25,7 @@ class Restaurants extends Component {
                             locationUrl={restaurant.locationUrl}
                             contact={restaurant.contact}
                             ratings={restaurant.ratings}
-                            onDelete={() => this.deleteCat(restaurant.id)}
+                            onDelete={() => this.deleteRestaurant(restaurant.id)}
                         />
                     </div>))}
                 </div>
@@ -39,14 +39,14 @@ class Restaurants extends Component {
         console.log(data);
         let restaurants = data.map(restaurant => {return {
             id: restaurant._id,
-            restaurantName: restaurant. restaurantName,
-            restaurantAddress: restaurant. restaurantAddress,
-            floor: restaurant. floor,
-            ownerName: restaurant. ownerName,
-            businessType: restaurant. businessType,
-            locationUrl: restaurant. locationUrl,
-            contact: restaurant. contact,
-            ratings: restaurant. ratings,
+            restaurantName: restaurant.restaurantName,
+            restaurantAddress: restaurant.restaurantAddress,
+            floor: restaurant.floor,
+            ownerName: restaurant.ownerName,
+            businessType: restaurant.businessType,
+            locationUrl: restaurant.locationUrl,
+            contact: restaurant.contact,
+            ratings: restaurant.ratings,
             }})
 
         this.setState({allRestaurants: restaurants})
@@ -54,8 +54,8 @@ class Restaurants extends Component {
 
     async deleteRestaurant(restaurantId) {
         let restaurant = await axios.delete(`http://localhost:5000/api/restaurants/${restaurantId}`)
-        let updatedCatArray = this.state.allRestaurants.filter(restaurant => restaurant.id !== restaurantId);
-        this.setState({allRestaurant: updatedRestaurantArray});
+        let updatedRestaurantArray = this.state.allRestaurants.filter(restaurant => restaurant.id !== restaurantId);
+        this.setState({allRestaurants: updatedRestaurantArray});
 
     }
 }
