@@ -3,6 +3,7 @@ import React, { Component } from "react"
 import { Link } from 'react-router-dom';
 import { FaTrash } from 'react-icons/fa';
 import { FaEye } from 'react-icons/fa';
+import restaurant from '../images/restaurant.jpg'
 
 
 class Restaurant extends Component {
@@ -14,7 +15,7 @@ class Restaurant extends Component {
         return (
             <React.Fragment>
                 <div className="card" style={{width: "18rem"}}>
-                    <img src={this.state.img} style={{"width":285, "height":250}} className="card-img-top" alt="..."/>
+                    <img src={restaurant} style={{"width":285, "height":250}} className="card-img-top" alt="..."/>
                     <div className="card-body">
                         <h5 className="card-title" style={{"textAlign":"center"}}> <b>Restaurant Name:</b> {this.props.restaurantName}</h5>
                         <div className="card-text">
