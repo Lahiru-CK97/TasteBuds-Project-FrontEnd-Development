@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { Component } from "react"
 import { Link } from 'react-router-dom';
+import restaurantImage from '../images/restaurant.jpg'
 
 
 
@@ -12,8 +13,8 @@ class Showrestaurant extends Component {
     render() {
         return (
             <React.Fragment>
-                <div className="card" style={{width: "18rem" ,"margin":"auto"}}>
-                    <img src={this.state.img} style={{"width":285, "height":250}} className="card-img-top" alt="..."/>
+                <div className="card" style={{width: "25rem" ,"margin":"auto"}}>
+                    <img src={restaurantImage} style={{"width":"25rem", "height":350}} className="card-img-top" alt="..."/>
                     <div className="card-body">
                         <h5 className="card-title" style={{"textAlign":"center"}}> <b>RestaurantName:</b>The Curry Leaf Café {this.props.restaurantName}</h5>
                         <div className="card-text">

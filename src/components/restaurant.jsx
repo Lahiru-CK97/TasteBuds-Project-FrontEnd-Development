@@ -14,8 +14,8 @@ class Restaurant extends Component {
     render() {
         return (
             <React.Fragment>
-                <div className="card" style={{width: "18rem"}}>
-                    <img src={restaurant} style={{"width":285, "height":250}} className="card-img-top" alt="..."/>
+                <div className="card" style={{width: "25rem"}}>
+                    <img src={restaurant} style={{"width":"25rem", "height":350}} className="card-img-top" alt="..."/>
                     <div className="card-body">
                         <h5 className="card-title" style={{"textAlign":"center"}}> <b>Restaurant Name:</b> {this.props.restaurantName}</h5>
                         <div className="card-text">
